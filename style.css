@@ -145,3 +145,69 @@ a:hover {
   > .menu__icon {
   display: flex;
 }
+
+.header .container .container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container .container-right .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .container .container-right .nav .menus {
+  position: relative;
+  padding: 20px 0;
+  margin-left: 15px;
+}
+
+.header .container .container-right .nav .menus .menus__name {
+  cursor: pointer;
+}
+
+.header .container .container-right .nav .menus .menus__name:hover {
+  color: #9fa1a3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.header .container .container-right .nav .menus .menus__name {
+  font-weight: 600;
+}
+
+.header .container .container-right .nav .menus .subMenu .list .menu {
+  padding: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .container .container-right .nav .menus .subMenu .list .menu:hover {
+  color: #0366d6;
+}
+
+.header .container .container-right .nav .inputdiv .input {
+  width: 220px;
+  height: 26px;
+  padding: 7px;
+  background-color: #242a2e;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-weight: 500;
+}
+
+.header .container .container-right .nav .inputdiv .input:focus {
+  background-color: white;
+  border-radius: 0;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.header .container .container-right .nav .menus.signup {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
