@@ -1,0 +1,147 @@
+/* common */
+* {
+  user-select: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.hardText {
+  font-weight: 900;
+}
+
+/* header tag*/
+
+.header {
+  width: 100px;
+  background-color: #242a2e;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* left */
+
+.header .container .container-left {
+  width: fit-content;
+}
+
+.header .container .container-left .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header .container .container-left .nav img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: block;
+  margin-right: 12px;
+  background-color: red;
+}
+
+.header .container .container-left .nav .menus {
+  position: relative;
+  padding: 20px 0;
+  margin-right: 15px;
+}
+
+.header .container .container-left .nav .menus .menus__name {
+  cursor: pointer;
+}
+
+.header .container .container-left .nav .menus .menus__name:hover {
+  color: #9fa1a3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.header .container .container-left .nav .menus:hover > .subMenu {
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  top: 50px;
+  left: -20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #eee, -1px 1px #eee;
+  cursor: pointer;
+}
+
+.header .container .container-left .nav .menus .menus__name {
+  font-weight: 600;
+}
+
+.header .container .container-left .nav .menus .subMenu {
+  display: none;
+}
+
+.header .container .container-left .nav .menus .subMenu .list {
+  width: 100%;
+}
+
+.header .container .container-left .nav .menus .subMenu .list .menu {
+  padding: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header
+  .container
+  .container-left
+  .nav
+  .menus
+  .subMenu
+  .list
+  .menu:nth-child(1) {
+  font-weight: 900;
+}
+
+.header .container .container-left .nav .menus .subMenu .list .menu:hover {
+  color: #0366d6;
+}
+
+.header
+  .container
+  .container-left
+  .nav
+  .menus
+  .subMenu
+  .list
+  .menu
+  .menu__icon {
+  display: none;
+  transform: scale(1.1);
+}
+
+.header
+  .container
+  .container-left
+  .nav
+  .menus
+  .subMenu
+  .list
+  .menu:hover
+  > .menu__icon {
+  display: flex;
+}
