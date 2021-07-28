@@ -206,7 +206,15 @@ a:hover {
   border-radius: 5px 5px 0px 0px;
 }
 
-.header .container .container-right .nav .menus.signup {
+.header .container .container-right .nav .menus .btn {
+  background-color: #242a2e;
+  color: #fff;
+  border: 1px solid #242a2e;
+  cursor: pointer;
+}
+.header .container .container-right .nav .menus .btn.signup {
+  background-color: #242a2e;
+  color: #fff;
   padding: 10px;
   border: 1px solid #fff;
   border-radius: 5px;
