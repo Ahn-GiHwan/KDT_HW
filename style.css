@@ -36,18 +36,18 @@ a:hover {
 
 /* left */
 
-.header .container .container-left {
+.header .container-left {
   width: fit-content;
 }
 
-.header .container .container-left .nav {
+.header .container-left .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 
-.header .container .container-left .nav img {
+.header .container-left .nav img {
   display: block;
   width: 34px;
   height: 34px;
@@ -56,23 +56,23 @@ a:hover {
   cursor: pointer;
 }
 
-.header .container .container-left .nav .menus {
+.header .container-left .menus {
   position: relative;
   padding: 20px 0;
   margin-right: 15px;
 }
 
-.header .container .container-left .nav .menus .menus__name {
+.header .container-left .menus .menus__name {
   cursor: pointer;
 }
 
-.header .container .container-left .nav .menus .menus__name:hover {
+.header .container-left .menus .menus__name:hover {
   color: #9fa1a3;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.header .container .container-left .nav .menus:hover > .subMenu {
+.header .container-left .menus:hover > .subMenu {
   display: flex;
   position: absolute;
   top: 50px;
@@ -86,78 +86,57 @@ a:hover {
   cursor: pointer;
 }
 
-.header .container .container-left .nav .menus .menus__name {
+.header .container-left .menus .menus__name {
   font-weight: 600;
 }
 
-.header .container .container-left .nav .menus .subMenu {
+.header .container-left .menus .subMenu {
   display: none;
 }
 
-.header .container .container-left .nav .menus .subMenu .list {
+.header .container-left .menus .subMenu .list {
   width: 100%;
 }
 
-.header .container .container-left .nav .menus .subMenu .list .menu {
+.header .container-left .menus .subMenu .list .menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 7px;
 }
 
-.header
-  .container
-  .container-left
-  .nav
-  .menus
-  .subMenu
-  .list
-  .menu:nth-child(1) {
+.header .container-left .menus .subMenu .list .menu:nth-child(1) {
   font-weight: 900;
 }
 
-.header .container .container-left .nav .menus .subMenu .list .menu:hover {
+.header .container-left .menus .subMenu .list .menu:hover {
   color: #0366d6;
 }
 
-.header
-  .container
-  .container-left
-  .nav
-  .menus
-  .subMenu
-  .list
-  .menu
-  .menu__icon {
+.header .container-left .menus .subMenu .list .menu .menu__icon {
   display: none;
   transform: scale(1.1);
 }
 
-.header
-  .container
-  .container-left
-  .nav
-  .menus
-  .subMenu
-  .list
-  .menu:hover
-  > .menu__icon {
+.header .container-left .menus .subMenu .list .menu:hover > .menu__icon {
   display: flex;
 }
 
-.header .container .container-right {
+/* right */
+
+.header .container-right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header .container .container-right .nav {
+.header .container-right .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.header .container .container-right .nav .menus {
+.header .container-right .menus {
   position: relative;
   padding: 20px 0;
   margin-left: 15px;
@@ -167,28 +146,28 @@ a:hover {
   cursor: pointer;
 }
 
-.header .container .container-right .nav .menus .menus__name:hover {
+.header .container-right .menus .menus__name:hover {
   color: #9fa1a3;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.header .container .container-right .nav .menus .menus__name {
+.header .container-right .menus .menus__name {
   font-weight: 600;
 }
 
-.header .container .container-right .nav .menus .subMenu .list .menu {
+.header .container-right .menus .subMenu .list .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 7px;
 }
 
-.header .container .container-right .nav .menus .subMenu .list .menu:hover {
+.header .container-right .menus .subMenu .list .menu:hover {
   color: #0366d6;
 }
 
-.header .container .container-right .nav .inputdiv .input {
+.header .container-right .inputdiv .input {
   width: 220px;
   height: 26px;
   padding: 7px;
@@ -199,22 +178,31 @@ a:hover {
   outline: none;
 }
 
-.header .container .container-right .nav .inputdiv .input:focus {
+.header .container-right .inputdiv .input:focus {
   border-radius: 0;
   border-radius: 5px 5px 0px 0px;
   background-color: white;
 }
 
-.header .container .container-right .nav .menus .btn {
+.header .container-right .menus .btn {
   border: 1px solid #242a2e;
   background-color: #242a2e;
   color: #fff;
   cursor: pointer;
+  transition: 0.2s;
 }
-.header .container .container-right .nav .menus .btn.signup {
+.header .container-right .menus .btn:hover {
+  color: #9fa1a3;
+}
+
+.header .container-right .menus .btn.signup {
   padding: 10px;
   border: 1px solid #fff;
   border-radius: 5px;
   background-color: #242a2e;
   color: #fff;
+  transition: 0.2s;
+}
+.header .container-right .menus .btn.signup:hover {
+  color: #9fa1a3;
 }
