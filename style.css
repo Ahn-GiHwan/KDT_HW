@@ -98,27 +98,27 @@ a:hover {
   width: 100%;
 }
 
-.header .container-left .menus .subMenu .list .menu {
+.header .container-left .menus .subMenu .list .sub_menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 7px;
 }
 
-.header .container-left .menus .subMenu .list .menu:nth-child(1) {
+.header .container-left .menus .subMenu .list .sub_menu:nth-child(1) {
   font-weight: 900;
 }
 
-.header .container-left .menus .subMenu .list .menu:hover {
+.header .container-left .menus .subMenu .list .sub_menu:hover {
   color: #0366d6;
 }
 
-.header .container-left .menus .subMenu .list .menu .menu__icon {
+.header .container-left .menus .subMenu .list .sub_menu .menu__icon {
   display: none;
   transform: scale(1.1);
 }
 
-.header .container-left .menus .subMenu .list .menu:hover > .menu__icon {
+.header .container-left .menus .subMenu .list .sub_menu:hover > .menu__icon {
   display: flex;
 }
 
@@ -156,14 +156,14 @@ a:hover {
   font-weight: 600;
 }
 
-.header .container-right .menus .subMenu .list .menu {
+.header .container-right .menus .subMenu .list .sub_menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 7px;
 }
 
-.header .container-right .menus .subMenu .list .menu:hover {
+.header .container-right .menus .subMenu .list .sub_menu:hover {
   color: #0366d6;
 }
 
