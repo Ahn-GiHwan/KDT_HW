@@ -6,12 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- 01. 기본경로 설정하기(이곳에 작성) -->
         <link rel="stylesheet" href="./assets/css/index.css" />
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
         <link
             href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap"
             rel="stylesheet"
         />
-        <!-- 02. 브라우저 타이틀 표시하기(이곳에 작성) -->
         <script src="./assets/js/main.js" defer></script>
+        <!-- 02. 브라우저 타이틀 표시하기(이곳에 작성) -->
         <title>MY BLOG</title>
     </head>
     <body>
@@ -22,10 +27,10 @@
                 <nav>
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="../index.html?card"> 게시글#1</a>
+                            <a href="#card1"> 게시글#1</a>
                         </li>
                         <li class="menu-item">
-                            <a href="../index.html?card"> 게시글#2</a>
+                            <a href="#card2"> 게시글#2</a>
                         </li>
                     </ul>
                 </nav>
@@ -68,7 +73,7 @@
                         <fieldset>
                             <legend>기분(단일선택)</legend>
                             <input
-                                type="checkbox"
+                                type="radio"
                                 name="feeling"
                                 value="Happy"
                                 id="feeling:Happy"
@@ -76,14 +81,14 @@
                             />
                             <label for="feeling:Happy">행복함</label><br />
                             <input
-                                type="checkbox"
+                                type="radio"
                                 name="feeling"
                                 value="Bad"
                                 id="feeling:Bad"
                             />
                             <label for="feeling:Bad">나쁨</label><br />
                             <input
-                                type="checkbox"
+                                type="radio"
                                 name="feeling"
                                 value="Sad"
                                 id="feeling:Sad"
@@ -154,6 +159,7 @@
                                 ./assets/images/image-md.jpg  700w,
                                 ./assets/images/image-lg.jpg 1000w
                             "
+                            src="./assets/images/image-lg.jpg"
                             sizes="(max-width: 500px) 444px,
                                    (max-width: 800px) 777px,
                                    1222px"
@@ -202,24 +208,20 @@
             </section>
             <!-- 우측 링크 영역 -->
             <nav class="links">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.fastcampus.co.kr"
-                             target="_blank">
-                                패스트캠퍼스(새창)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.fastcampus.co.kr"
-                             target="_self">
-                                바이트 디그리(현재창)
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li>
+                        <a href="https://www.fastcampus.co.kr" target="_blank">
+                            패스트캠퍼스(새창)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fastcampus.co.kr" target="_self">
+                            바이트 디그리(현재창)
+                        </a>
+                    </li>
+                </ul>
             </nav>
-        </div>
+        </main>
         <!-- 푸터 -->
         <footer class="footer">
             <div class="container">
