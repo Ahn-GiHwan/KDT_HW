@@ -1,6 +1,7 @@
 * {
     font-family: "Montserrat", "Nanum Gothic";
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 pre,
