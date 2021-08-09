@@ -11,14 +11,14 @@
             rel="stylesheet"
         />
         <!-- 02. 브라우저 타이틀 표시하기(이곳에 작성) -->
-        <script src="./js/main.js"></script>
+        <script src="./assets/js/main.js" defer></script>
         <title>MY BLOG</title>
     </head>
     <body>
         <!-- 헤더 -->
         <header class="header">
             <div class="container">
-                <h2 class="logo-title">MY BLOG</h2>
+                <h1 class="logo-title">MY BLOG</h1>
                 <nav>
                     <ul class="menu">
                         <li class="menu-item">
@@ -47,11 +47,11 @@
                         <p>
                             <label>
                                 내용<br />
-                                <input
+                                <textarea
                                     name="content"
                                     cols="55"
                                     rows="5"
-                                ></input>
+                                ></textarea>
                             </label>
                         </p>
                         <p>
@@ -126,8 +126,8 @@
                             <label for="category:ETC">기타 </label><br />
                         </fieldset>
                         <footer class="buttons">
-                            <button type="button">글쓰기</button>
-                            <button type="button">초기화</button>
+                            <button type="submit">글쓰기</button>
+                            <button type="reset">초기화</button>
                         </footer>
                     </form>
                 </div>
@@ -175,7 +175,7 @@
                         </p>
                     </header>
                     <hr class="separator" />
-                    <ol type="A">
+                    <ol type="1">
                         <li>
                             동해물과 백두산이 마르고 닳도록 하느님이 보우하사
                             우리나라 만세 무궁화 삼천리 화려 강산 대한 사람
@@ -205,13 +205,13 @@
                     <ul>
                         <li>
                             <a href="https://www.fastcampus.co.kr"
-                             target="">
+                             target="_blank">
                                 패스트캠퍼스(새창)
                             </a>
                         </li>
                         <li>
                             <a href="https://www.fastcampus.co.kr"
-                             target="">
+                             target="_self">
                                 바이트 디그리(현재창)
                             </a>
                         </li>
@@ -228,13 +228,13 @@
                         <li>사무실 : 서울시 강남구 강남대로 364</li>
                         <li>
                             이메일 :
-                            <a href="link:myblog@email.com"
+                            <a href="mailto:myblog@email.com"
                                 >myblog@example.com</a
                             >
                         </li>
                         <li>
                             전화번호 :
-                            <a href="link:12345678910">123-4567-8910</a>
+                            <a href="tel:12345678910">123-4567-8910</a>
                         </li>
                     </ul>
                 </address>
