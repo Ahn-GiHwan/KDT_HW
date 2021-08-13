@@ -25,6 +25,7 @@ class NaverNewsCrawler:
         wb = Workbook()
         ws = wb.active
         ws.append(['번호', '제목', '주소', '요약'])
+
         for index, item in enumerate(news_items, start=1):
             title_tag = item.select_one('a.news_tit')
             title = title_tag.text
