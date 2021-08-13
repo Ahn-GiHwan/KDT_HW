@@ -34,16 +34,16 @@ def send_mail(name, addr, subject, contents, attachment=None):
         print('Wrong email')
         return
 
-    msg = MIMEMultipart('alternative')
+    emailInputWord = MIMEMultipart('alternative')
     if attachment:
-        msg = MIMEMultipart('mixed')
+        emailInputWord = MIMEMultipart('mixed')
 
-    msg['From'] = SMTP_USER
-    msg['To'] = addr
-    msg['Subject'] = name + '님, ' + subject
+    emailInputWord['From'] = SMTP_USER
+    emailInputWord['To'] = addr
+    emailInputWord['Subject'] = name + '님, ' + subject
 
     text = MIMEText(contents, _charset='utf-8')
-    msg.attach(text)
+    emailInputWord.attach(text)
 
     if attachment:
         from email.mime.base import MIMEBase
@@ -57,11 +57,11 @@ def send_mail(name, addr, subject, contents, attachment=None):
         filename = os.path.basename(attachment)
         file_data.add_header('Content-Disposition',
                              'attachment; filename="'+filename+'"')
-        msg.attach(file_data)
+        emailInputWord.attach(file_data)
 
     smtp = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
     smtp.login(SMTP_USER, SMTP_PASSWORD)
-    smtp.sendmail(SMTP_USER, addr, msg.as_string())
+    smtp.sendmail(SMTP_USER, addr, emailInputWord.as_string())
     smtp.close()
 
 
