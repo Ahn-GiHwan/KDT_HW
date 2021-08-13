@@ -17,7 +17,7 @@ class NaverNewsCrawler:
         req = requests.get(self.search_url)
         if req.status_code != requests.codes.ok:
             print("사이트 접속 실패 인터넷 상태를 확인하거나, 키워드를 확인하세요.")
-            return None
+            return
 
         print(f"{self.keyword}에 대한 기사 수집 시작")
         html = BeautifulSoup(req.text, "html.parser")
