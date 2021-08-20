@@ -1,8 +1,8 @@
-# 엑셀에 데이터를 저장하기 위한 모듈
-from openpyxl import Workbook
-
 # 웹에서 데이터를 크롤링하기 위한 모듈
 import requests
+
+# 엑셀에 데이터를 저장하기 위한 모듈
+from openpyxl import Workbook
 from bs4 import BeautifulSoup
 
 
@@ -17,7 +17,7 @@ class NaverNewsCrawler:
         req = requests.get(self.search_url)
         if req.status_code != requests.codes.ok:
             print("사이트 접속 실패 인터넷 상태를 확인하거나, 키워드를 확인하세요.")
-            return None
+            return
 
         print(f"{self.keyword}에 대한 기사 수집 시작")
         html = BeautifulSoup(req.text, "html.parser")
@@ -25,6 +25,7 @@ class NaverNewsCrawler:
         wb = Workbook()
         ws = wb.active
         ws.append(['번호', '제목', '주소', '요약'])
+
         for index, item in enumerate(news_items, start=1):
             title_tag = item.select_one('a.news_tit')
             title = title_tag.text
